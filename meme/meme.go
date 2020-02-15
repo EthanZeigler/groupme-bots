@@ -69,7 +69,6 @@ func quoteRequest(callback srv.Callback, i *srv.Instance) (cont bool) {
 	names := quoteRegex.SubexpNames()
 	captureGroups := mapSubexpNames(matches, names)
 
-	log :=
 
 	i.Log.WithFields(logrus.Fields{
 		"matches": matches,
